@@ -17,6 +17,7 @@ function App() {
         >
           Learn React
         </a>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8754756108651563" crossorigin="anonymous"></script>
       </header>
     </div>
   );
