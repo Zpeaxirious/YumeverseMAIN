@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaSteam, FaGamepad, FaDiscord, FaBars } from 'react-icons/fa';
 import './App.css';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,6 +41,9 @@ const App = () => {
         </div>
       </section>
 
+      {/* Vercel Speed Insights Section */}
+      <SpeedInsights/>
+      
       {/* Footer Section */}
       <footer className="footer">
         <div className="social-links">
