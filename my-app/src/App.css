@@ -1,11 +1,4 @@
-:root[data-theme="light"] {
-  --text: #0c0816;
-  --background: #f3f0fb;
-  --primary: #997fdc;
-  --secondary: #a07ff5;
-  --accent: #7f4dfd;
-}
-:root[data-theme="dark"] {
+:root {
   --text: #ede9f7;
   --background: #070410;
   --primary: #3d2380;
@@ -15,14 +8,14 @@
 
 .App {
   text-align: center;
-  background-color: #282c34;
+  background-color: var(--background);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--text);
 }
 
 .App-logo {
@@ -37,7 +30,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--primary);
 }
 
 @keyframes App-logo-spin {
