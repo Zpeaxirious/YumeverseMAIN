@@ -16,6 +16,9 @@ function App() {
       >
         Learn React
       </a>
+      <p>
+        Still in the making! Please wait
+      </p>
     </div>
   );
 }
