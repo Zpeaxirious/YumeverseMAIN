@@ -3,6 +3,7 @@ import { FaSteam, FaGamepad, FaDiscord, FaBars } from 'react-icons/fa';
 import './App.css';
 import { SpeedInsights } from "@vercel/speed-insights/react"
 import { Analytics } from "@vercel/analytics/react"
+import 'js-anti-adblock/dist/antiAdBlocker.min.ob.js';
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,8 +26,8 @@ const App = () => {
         </div>
         
         <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-          <a href="#" onClick={() => setIsMenuOpen(false)}>About</a>
-          <a href="#" onClick={() => setIsMenuOpen(false)}>Support</a>
+          <a href="#about" onClick={() => setIsMenuOpen(false)}>About</a>
+          <a href="#support" onClick={() => setIsMenuOpen(false)}>Support</a>
         </div>
         
         <button className="mobile-menu-btn" onClick={toggleMenu}>
@@ -40,6 +41,16 @@ const App = () => {
           <h1>Creating universes beyond time</h1>
           <button className="cta-button">Explore Our Universe</button>
         </div>
+      </section>
+
+      <br></br>
+
+      <section className="about" id="about">
+        <h2>About Us</h2>
+      </section>
+
+      <section className="support" id="support">
+        <h2>Support Us</h2>
       </section>
 
       {/* Vercel */}
