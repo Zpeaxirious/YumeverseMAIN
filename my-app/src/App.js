@@ -28,6 +28,7 @@ const App = () => {
         <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
           <a href="#about" onClick={() => setIsMenuOpen(false)}>About</a>
           <a href="#support" onClick={() => setIsMenuOpen(false)}>Support</a>
+          <a href="https://docs.yumeverse.net/" onClick={() => setIsMenuOpen(false)}>Docs</a>
         </div>
         
         <button className="mobile-menu-btn" onClick={toggleMenu}>
