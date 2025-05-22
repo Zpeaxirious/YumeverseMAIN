@@ -29,12 +29,6 @@ const Home = () => {
         </div>
       </section>
 
-      <br />
-
-      <section className="about" id="about">
-        <h2>About Us</h2>
-      </section>
-
       {/* Vercel */}
       <SpeedInsights />
       <Analytics />
