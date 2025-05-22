@@ -36,7 +36,7 @@ const Home = () => {
       {/* Footer Section */}
       <footer className="footer">
         <div className="social-links">
-          {/* <a href="#"><FaSteam className="icon" /></a> */}
+          <a href="https://steamcommunity.com/groups/yumeverse"><FaSteam className="icon" /></a>
           <a href="https://discord.com/invite/Ey9JbZrwQ8/" target="_blank" rel="noreferrer"><FaDiscord className="icon" /></a>
           {/* <a href="#"><FaGamepad className="icon" /></a> */}
         </div>
