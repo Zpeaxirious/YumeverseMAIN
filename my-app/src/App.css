@@ -6,6 +6,16 @@
   --accent: #3302b1;
 }
 
+::selection {
+  background: var(--primary);
+  color: var(--text);
+}
+
+::-moz-selection {
+  background: var(--primary);
+  color: var(--text);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,19 +29,6 @@
   min-height: 100vh;
 }
 
-/* Temporary Notice */
-.temporary-notice {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: var(--accent);
-  color: var(--text);
-  text-align: center;
-  padding: 10px;
-  z-index: 2000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-}
-
 /* Navbar */
 .navbar {
   display: flex;
@@ -42,18 +39,38 @@
   width: 100%;
   background: rgba(7, 4, 16, 0.95);
   z-index: 1000;
-  margin-top: 40px;
 }
+
+.navbar.scrolled {
+  background: var(--primary);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.navbar a, .navbar .logo-link {
+  text-decoration: none;
+}
+
+.navbar a:hover, .navbar .logo-link:hover {
+  text-decoration: none;
+}
+
 
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
 }
 
-.yume { color: var(--primary); }
-.verse { color: var(--accent); }
+.yume {
+  color: var(--primary);
+  text-decoration: none;
+}
+.verse {
+  color: var(--accent);
+  text-decoration: none;
+}
 
 .nav-links {
+  text-decoration: none;
   display: flex;
   gap: 2rem;
 }
@@ -65,6 +82,7 @@
 }
 
 .nav-links a:hover {
+  text-decoration: none;
   color: var(--accent);
 }
 
